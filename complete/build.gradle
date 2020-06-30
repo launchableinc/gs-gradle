@@ -1,6 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'application'
+apply plugin: 'launchable'
 
 mainClassName = 'hello.HelloWorld'
 
@@ -29,3 +30,9 @@ dependencies {
 
 // tag::wrapper[]
 // end::wrapper[]
+
+test {
+    // useJUnit()
+    useJUnitwithLaunchable()
+}
+
